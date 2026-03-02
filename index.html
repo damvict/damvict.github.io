@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Professional Portfolio | Full-Stack Software Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #1F3A5F;
+            --accent: #2E6F95;
+            --background: #F5F7FA;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: #334155;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .nav-link {
+            @apply text-slate-600 hover:text-[var(--primary)] font-medium transition-colors duration-200;
+        }
+        .section-padding {
+            @apply py-16 md:py-24;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+    </style>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1F3A5F",
+                        accent: "#2E6F95",
+                        background: "#F5F7FA",
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="antialiased">
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white font-bold text-lg shadow-lg">DPK</div>
+<div class="flex flex-col">
+<span class="text-lg font-bold text-primary leading-none uppercase tracking-tight">Damayanth </span>
+<span class="text-xs text-accent font-semibold tracking-widest uppercase">Software Engineering</span>
+</div>
+</div>
+<div class="hidden lg:flex items-center space-x-10">
+<div class="flex space-x-8">
+<a class="nav-link" href="#skills">Skills</a>
+<a class="nav-link" href="#experience">Experience</a>
+<a class="nav-link" href="#projects">Projects</a>
+<a class="nav-link" href="#contact">Contact</a>
+</div>
+<div class="h-6 w-px bg-slate-200"></div>
+<div class="flex items-center gap-0.5 text-sm font-bold bg-slate-100 p-1 rounded-md">
+  <span class="px-3 py-1.5 rounded bg-white text-primary shadow-sm">EN</span>
+  <a href="de.html"
+     class="px-3 py-1.5 rounded text-slate-400 hover:text-primary transition-colors">
+     DE
+  </a>
+</div>
+</div>
+<div class="lg:hidden">
+<button class="p-2 text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<header class="bg-white border-b border-slate-100 overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28">
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+<div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 relative">
+<div class="absolute inset-0 rounded-full border-4 border-slate-50 ring-8 ring-slate-100/50"></div>
+<img alt="Damayanthi Kumari" 
+     class="w-full h-full object-cover rounded-full shadow-2xl relative z-10"
+     src="images/profile.jpeg" />
+     
+</div>
+<div class="flex-1 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-accent text-sm font-bold uppercase tracking-wider mb-6">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                       Software Engineer · Open to international opportunities
+                    </div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary mb-6 leading-tight">
+                        Full-Stack Business <br class="hidden md:block"/> Systems Developer
+                    </h1>
+<p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Enterprise Architecture
+Architecture and modernization of scalable enterprise systems spanning web, mobile, desktop, and data platforms.
+                    </p>
+
+</div>
+</div>
+
+</header>
+<section class="section-padding bg-background" id="skills">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Core Technology Stack</h2>
+<div class="h-1.5 w-16 bg-accent mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center justify-center border border-slate-100 card-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<img alt="Django" class="w-14 h-14 mb-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrMESQMneI-YGNqKXT4titZTbRkDdAS7HmML0Kd0obEOi4I-R7QGZPkbkYcvbEUB7ukMv8I9G6Y2NNK3yJuQrrrL7yXhftSmh09GXoKNyOdUIHM76N_sSBxliI9QfICgQHkJWXiFbfnRLmDmNxEgVd1kMFk5Hy_GOw4m2f_3Gks9V5SBUc67d96_xcQVx2h7_o5LKvb_kz-4YNv3NmICaMSTu30OcoQjyVfzv4d2u_bTJDHAQcWtRdm0xxWH2EdDu4Df0ME6KzqV4"/>
+<span class="font-bold text-slate-700">Django</span>
+</div>
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center justify-center border border-slate-100 card-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<img alt="PHP" class="w-14 h-14 mb-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj4pKKHgtJYiU3B_9Cw0RQl-LA5j1KmeeLIIhWR6bRHHFOLj59gF8RVcMkrZWvpiJdNnczvPJBciAKe2EptOxHAN-AfqO1_rcI2E9d4pdRQgdEsiS7XKh3uZIJchRWJpnotC_KLnLr2zQjkMTGft0ND2fKJYvUPG_tw_hjYMC_sUo_jJ-EvUO0v_rS6xN9i-jpjh5xYZVAfc2zRy4IUJq9otsztDdvyba_4o5RdNnMbAh4YpXhwvEyJc3O8wW2oW3nSDylWl2q0Fo"/>
+<span class="font-bold text-slate-700">PHP 8.x</span>
+</div>
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center justify-center border border-slate-100 card-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<img alt="VB.NET" class="w-14 h-14 mb-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk0VMPjg5cmccNTGqdKKZ0ucQGOywR43vcMqVYJ0ebeygA5AHKCMdgkn4GLSIZsB7uKOteaMEEFJNOD1375p9fqx50QT9w5i1mV2ImiiAlMArkIiM5DrAOy-ti2cVu8E_tClVkpA69FmRIKh671wpvYn_UQv0x5HHEjWA_P4JY2zFvwRcCoqIrQRIXuM_ntPCFJMEEnk9mS-sYCABTX26sF2PxSpuEwuLd8pUA1FfRLv5GCruZl_NMyf4RVrRrpOzdI5ffs0XsHZs"/>
+<span class="font-bold text-slate-700">VB.NET</span>
+</div>
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center justify-center border border-slate-100 card-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<img alt="MySQL" class="w-14 h-14 mb-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAoHxxIeDAJ8MO-N5UltydmouZ3_wEJ7qFWzac1ZfjoteG1MU9ttZP7ovMs0FCX-tREnZ4Ecdj_0mYpjR76BzBINnIboSjxP9FQ1AWQ8ctuBazv15wZnx60rO3CD0_uhMM7d5sHMnvkBeN7cbESz39trDU8jfeRS6qR0_Bl-x5l4v0TyQYN7_NJP0tQQs2-MfhM2WBvWLADpfpbgeSy0K9DGpyn8wl7t5WwfmLjsWVaaFLQtgRfQ8GrFen_V0BLN78s2vimwPOqiY"/>
+<span class="font-bold text-slate-700">MySQL</span>
+</div>
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center justify-center border border-slate-100 card-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<img alt="PostgreSQL" class="w-14 h-14 mb-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGv-a4XnidJ9-gKY1MnnBY_lWQ9a_A4AaqrpHky4SmP0a_JewhJ9mHGvnJFY86_asdqmlP6uelet5tZ70S7oCsRZI8fM5bDh7H460H26o2LvMpDZbIfmNu3JRZj6N62Pt2Emo2vWzuQUImRdAG6X0qFNSfgGCbux4GDNAfDXj_iFrCqh2vcysJ8Rq4cyVZVpsG654ZlM5iMgU4SWJk6Gh6QtfJeHdWiqAHBYxK5Ppv065xusoZx6MsnriafBNhaM3NhZOWo1epuqM"/>
+<span class="font-bold text-slate-700">PostgreSQL</span>
+</div>
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center justify-center border border-slate-100 card-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<img alt="JavaScript" class="w-14 h-14 mb-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtTz5cIQtYyGrYHJ2_5dy7QncB7CyVFTQ6q9-xXdayA-JcfF6AK1cIGqY2Uf4B7-6xIWs9L6krC6u_-gHxkmPWN1LyJNBzfK-1dBxDHvHhXkmTTRp7YwQL93GVu_uWjCGOslk8GQGRmBDSzGQQ5DNnY8InRpgcSY-XuU0MtC4YepyD1BPIZoAhnRtoiCNKvaa9dRAuzaoed-6oAkgSgaANZ1HeykWbbq3FhEkBgMsEEGoTA5bLB21eE4hAkCLvvXZjKlk9DZIA_PE"/>
+<span class="font-bold text-slate-700">JavaScript</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section-padding bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Expertise Domains</h2>
+<p class="text-slate-500 max-w-xl mx-auto">Specialized expertise in modern industrial and corporate systems for modern industrial and corporate ecosystems.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="p-8 rounded-2xl bg-slate-50 border border-slate-100">
+<div class="w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-3xl">corporate_fare</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Enterprise Systems</h3>
+<p class="text-slate-600 leading-relaxed mb-4">Development of custom ERP, CRM, and business management platforms for industrial and corporate environments.</p>
+<ul class="text-sm font-semibold text-accent space-y-1">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Process Automation</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Business Workflow Systems</li>
+</ul>
+</div>
+<div class="p-8 rounded-2xl bg-slate-50 border border-slate-100">
+<div class="w-14 h-14 bg-accent text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-accent/20">
+<span class="material-symbols-outlined text-3xl">language</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Web Platforms</h3>
+<p class="text-slate-600 leading-relaxed mb-4">Scalable B2B portals and internal dashboards built with security-first principles and high availability architectures.</p>
+<ul class="text-sm font-semibold text-accent space-y-1">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Cloud Architecture</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> RESTful APIs</li>
+</ul>
+</div>
+<div class="p-8 rounded-2xl bg-slate-50 border border-slate-100">
+<div class="w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-3xl">database</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Legacy Modernization</h3>
+<p class="text-slate-600 leading-relaxed mb-4">Specialized in transitioning aging VB.NET or PHP legacy stacks to performant modern Python or Node environments.</p>
+<ul class="text-sm font-semibold text-accent space-y-1">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Database Migration</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Microservices</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section-padding bg-background" id="projects">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+<div>
+<h2 class="text-3xl font-bold text-primary mb-4">Selected Case Studies</h2>
+<p class="text-slate-500">Real-world solutions for complex business challenges.</p>
+</div>
+<a class="group flex items-center gap-2 text-accent font-bold hover:text-primary transition-colors" href="#">
+                    View Portfolio Archive <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid lg:grid-cols-2 gap-10">
+<div class="bg-white rounded-3xl overflow-hidden card-shadow group">
+<div class="aspect-video bg-slate-200 relative overflow-hidden">
+<img alt="Logistics Platform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7nsKpEKBJDIX6t7syGRnkpLl9OfsYR21oO3oT9bEPZmJGrLmAQJvspxRhyUsMtYP0HMw3zkKbQ1DzlgTbP4Dv2uV4i-o1Pr67JDL7HiXoJhe6gv1eQNaQ3mgRGiuGPYgrIsFval5bYtLLloKxoNBRaDqRa06R5BV2kb0aggAJVDad-E0968OxhYy2hxtJ0Jc1LHExeutr1t2n-W3zvK74_scfKl65C9D112CkvdEMfflOaZ96meBjPWN7zEFCE0Fx-2LOu70W08c"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="p-8">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-wider rounded">Django</span>
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-wider rounded">MySQL</span>
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-wider rounded">React Native</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-3">Intelligent Logistics & Import Operations Platform</h3>
+<p class="text-slate-600 mb-6 line-clamp-2">An end-to-end shipment lifecycle management system covering arrival tracking, customs clearing, warehouse handling, financial documents, and dispatch coordination.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="logistics-case-study.html">
+                            Case Study <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-3xl overflow-hidden card-shadow group">
+<div class="aspect-video bg-slate-200 relative overflow-hidden">
+<img alt="Financial Software" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1QUirQk4dUrgWKUlVPlzPMDNXkCQY9semS_wNsuEa5npiHdxSqmbIraqTrml_nFwHf5liQaXvt00x2Tvkpi6BwoAUa-NGjRaAd6fPbFyZgczxY6KWwxaTGFS80vlx7_cSn0U8uWbZ1XI0SkBAzYEPEko8LeyXql6tWvS02l-nsbDSOiMuQEK8I8PPx-APlzK2dW8QD5mkXh9EcfMv3-jIaJ9TLRtk_XexAywHkQ3f7CdZRB8nIuLN9gv_O_ajgTDMQDchFQw9Bqs"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="p-8">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-wider rounded">VB.NET</span>
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-wider rounded">SQL Server</span>
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-wider rounded">Finance</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-3">ERP Finance Module</h3>
+<p class="text-slate-600 mb-6 line-clamp-2">Finance and payment processing module supporting cheque issuance, bank tracking, and accounting controls within an enterprise system.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="#">
+                            Case Study <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-padding bg-white" id="experience">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-primary mb-4">Professional Experience</h2>
+      <div class="h-1.5 w-16 bg-accent mx-auto rounded-full"></div>
+    </div>
+
+    <div class="space-y-12">
+
+      <!-- Anura Group -->
+      <div class="relative pl-8 border-l-2 border-slate-200">
+        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-accent rounded-full border-4 border-white"></div>
+
+        <div class="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <h3 class="text-xl font-bold text-primary">Fullstack Developer</h3>
+          <span class="text-sm font-bold text-accent bg-slate-100 px-3 py-1 rounded-full">
+            May 2023 — Present
+          </span>
+        </div>
+
+   <p class="font-semibold text-slate-700 mb-4">
+  Anura Group of Companies · Sri Lanka
+</p>
+
+<ul class="space-y-3 text-slate-600">
+
+  <li class="flex items-start gap-2">
+    <span class="material-symbols-outlined text-accent text-sm mt-1">check_circle</span>
+    Developed enterprise logistics and business management platforms using Python/Django, PHP/MySQL, and React Native.
+  </li>
+
+  <li class="flex items-start gap-2">
+    <span class="material-symbols-outlined text-accent text-sm mt-1">check_circle</span>
+    Designed and implemented asset management, vehicle management, consumable inventory, and helpdesk systems for operational workflows.
+  </li>
+
+
+
+  <li class="flex items-start gap-2">
+    <span class="material-symbols-outlined text-accent text-sm mt-1">check_circle</span>
+    Developed dashboards, REST APIs, and database models enabling real-time monitoring across web and mobile applications.
+  </li>
+
+</ul>
+      </div>
+
+      <!-- Sakuna -->
+      <div class="relative pl-8 border-l-2 border-slate-200">
+        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white"></div>
+
+        <div class="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <h3 class="text-xl font-bold text-primary">Director of Software Engineering</h3>
+          <span class="text-sm font-bold text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
+            May 2018 — May 2023
+          </span>
+        </div>
+
+        <p class="font-semibold text-slate-700 mb-4">
+  Sakuna Technologies (Pvt) Ltd · Sri Lanka
+</p>
+
+<ul class="space-y-3 text-slate-600">
+
+  <li class="flex items-start gap-2">
+    <span class="material-symbols-outlined text-accent text-sm mt-1">check_circle</span>
+    Led development of enterprise financial and business systems using VB.NET, SQL Server, and PHP/MySQL web technologies.
+  </li>
+
+  <li class="flex items-start gap-2">
+    <span class="material-symbols-outlined text-accent text-sm mt-1">check_circle</span>
+    Delivered accounting, payroll, cheque management, inventory, and transaction processing applications for business operations.
+  </li>
+
+
+
+  <li class="flex items-start gap-2">
+    <span class="material-symbols-outlined text-accent text-sm mt-1">check_circle</span>
+    Managed system architecture, database design, and full software development lifecycle across multiple client projects.
+  </li>
+
+</ul>
+      </div>
+
+      <!-- Victoria -->
+      <div class="relative pl-8 border-l-2 border-slate-200">
+        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white"></div>
+
+        <div class="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <h3 class="text-xl font-bold text-primary">Software Engineer</h3>
+          <span class="text-sm font-bold text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
+            2004 —  2018
+          </span>
+        </div>
+
+        <p class="font-semibold text-slate-700 mb-4">
+          Victoria Group · Sri Lanka
+        </p>
+
+        <ul class="space-y-3 text-slate-600">
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-accent text-sm mt-1">check_circle</span>
+            Developed business applications and internal tools using VB.NET,MS SQL Server, PHP, and MySQL.
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-accent text-sm mt-1">check_circle</span>
+            Built inventory, sales, payroll, and operational management systems supporting end-to-end business workflows.
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-accent text-sm mt-1">check_circle</span>
+            Maintained databases, reports, and desktop applications supporting daily operations.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="bg-primary text-white pt-20 pb-10" id="contact">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid lg:grid-cols-2 gap-16 mb-20">
+
+      <!-- LEFT -->
+      <div>
+        <h2 class="text-4xl font-extrabold mb-6 leading-tight">
+         Available for international software engineering roles
+        </h2>
+
+        <p class="text-blue-100/70 text-lg mb-10 max-w-md">
+           Full-stack business systems engineer with 15+ years experience in
+  enterprise software development across logistics, finance, and
+  operational platforms. Based in Sri Lanka and open to relocation
+  across Europe.
+        </p>
+
+        <div class="space-y-6">
+
+          <!-- Email -->
+          <a class="flex items-center gap-4 group" href="mailto:YOUR_EMAIL_HERE">
+            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-accent transition-colors">
+              <span class="material-symbols-outlined text-white">mail</span>
+            </div>
+            <span class="text-lg font-medium">damvict@gmail.com</span>
+          </a>
+
+          <!-- Location -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+              <span class="material-symbols-outlined text-white">location_on</span>
+            </div>
+            <span class="text-lg font-medium">Sri Lanka · International relocation available</span>
+          </div>
+
+        </div>
+
+        <!-- Social -->
+        <div class="flex gap-4 mt-12">
+
+          <a class="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all"
+             href="YOUR_LINKEDIN_URL" target="_blank">
+            <img alt="LinkedIn" class="w-6 h-6"
+                 src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg">
+          </a>
+
+          <a class="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all"
+             href="YOUR_GITHUB_URL" target="_blank">
+            <img alt="GitHub" class="w-6 h-6"
+                 src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg">
+          </a>
+
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <!-- RIGHT PROFILE -->
+<div class="bg-white/5 p-10 rounded-3xl backdrop-blur-sm border border-white/10">
+
+  <h3 class="text-2xl font-bold mb-6">Professional Summary</h3>
+
+  <p class="text-blue-100/80 leading-relaxed mb-6">
+     Specialized in designing and delivering enterprise business
+    systems including logistics platforms, financial modules,
+    inventory, asset, and workflow management applications.
+  </p>
+
+  <p class="text-blue-100/80 leading-relaxed mb-8">
+     Strong multi-stack background across Django, PHP/MySQL,
+    VB.NET/SQL Server, and React Native with experience spanning
+    web, desktop, and mobile architectures.
+  </p>
+
+  <div class="space-y-4 mb-8">
+    <div class="flex flex-wrap gap-4">
+    <a href="cv.pdf"
+       class="bg-accent hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold transition-all shadow-lg">
+       Download CV
+    </a>
+
+    <a href="YOUR_LINKEDIN_URL"
+       target="_blank"
+       class="border border-white/20 hover:border-white px-6 py-3 rounded-xl font-bold transition-all">
+       LinkedIn
+    </a>
+  </div>
+   
+
+  </div>
+
+
+
+</div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-blue-100/50 font-medium">
+      <p>© 2026 Damayanthi Pushpa Kumari. All rights reserved.</p>
+
+      <div class="flex gap-8">
+        <a class="hover:text-white transition-colors" href="#">Imprint</a>
+        <a class="hover:text-white transition-colors" href="#">Privacy</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</body></html>

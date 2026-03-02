@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Logistics Platform Case Study</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1f3a60",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#14181e",
+                        "slate-custom": "#64748b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-primary">Portfolio</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary text-sm font-semibold border-b-2 border-primary pb-1" href="#">Projects</a>
+<a class="text-slate-custom dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+<a class="text-slate-custom dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Resume</a>
+<a class="text-slate-custom dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex h-10 items-center justify-center rounded-lg bg-primary px-5 text-sm font-bold text-white shadow-sm hover:bg-primary/90 transition-all">
+                        Let's Talk
+                    </button>
+<div class="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden border border-primary/20">
+<img alt="User" data-alt="Professional headshot of a software engineer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoQ5zBSozct7ayDHltqchcjgvezpuvDNSfASYnRU3UCxykohbLE8tjnvipodEUELQFHexufewP0fYqdM7TzpGlx1usxj_k1adZfzO1WIKvuaQ-b3nyyK0Juf7cdmsDOPOsDMVzYpA6nZF9Cjfe5Okvms7-KfEjqzPsNEE2PmyYdqlWzguuqJolMScWCQO7TctZbbrQYYCmtJYqEC_CIZ1e_0AbN2skKrXHZGu8dWO8Ga62MD2E9Exdcjfb8hYzzpSlcqLrChWYM2o"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-sm font-medium text-slate-custom dark:text-slate-400 mb-8">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<a class="hover:text-primary" href="#">Projects</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-primary font-bold">Logistics Platform</span>
+</nav>
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+<div class="space-y-6">
+<div class="flex gap-2">
+<span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">Django</span>
+<span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">React</span>
+<span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">MySQL</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white leading-[1.1]">
+                    Intelligent Logistics Management Platform
+                </h1>
+<p class="text-lg text-slate-custom dark:text-slate-400 leading-relaxed max-w-xl">
+                   The Intelligent Logistics Management Platform is an end-to-end shipment lifecycle system designed to streamline import and logistics operations from arrival notice through warehouse processing to final dispatch.
+It centralizes shipment tracking, financial documentation, customs clearing, and operational workflows into a single real-time platform.
+                </p>
+<div class="flex flex-wrap gap-4 pt-2">
+<button class="h-12 px-8 rounded-lg bg-primary text-white font-bold hover:shadow-lg transition-all flex items-center gap-2">
+                        View Live Demo <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+<button class="h-12 px-8 rounded-lg border-2 border-primary/20 text-primary font-bold hover:bg-primary/5 transition-all flex items-center gap-2">
+                        View Repository <span class="material-symbols-outlined text-sm">code</span>
+</button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-blue-400 rounded-xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+<div class="relative bg-white dark:bg-background-dark rounded-xl border border-primary/10 overflow-hidden shadow-2xl shadow-primary/5">
+<img alt="Dashboard Preview" class="w-full aspect-video object-cover" data-alt="Modern logistics dashboard showing warehouse data and map" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6lcn0CHaCm6xdjlYrTK1uZ54JVJHnGOzbs7-BftssPFwUc9Il5fTepWdwrGziUi6hlKKqPnqLp7hfE551jIpY8xDqrLMr6h8bWKkGoKhTI3XhJTEyJ2sT24VlQAdDL3I4jgPqj6UpjciGwFyzk4ADCULaDDATQsYKqkmZHFrvuGH3jkIeHrjz6j8ipzNBsLG_tSnfYovf4FbddP4qoAE9hW24Gi_i2zwbFZOxa_17HixjQctxUkfw_55gIkD2W8krXLGtPtFuNzM"/>
+</div>
+</div>
+</section>
+<!-- Overview & Facts -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
+<div class="lg:col-span-2 space-y-6">
+<h2 class="text-2xl font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">description</span> Project Overview
+                </h2>
+<div class="space-y-4 text-slate-custom dark:text-slate-400 text-lg leading-relaxed">
+<p>
+                        The global shipping industry faces significant challenges in transparency and efficiency. This project aimed to unify fragmented logistics data into a single, cohesive dashboard for enterprise clients. 
+                    </p>
+<p>
+                        I led the engineering team to build a scalable microservices architecture that handles millions of tracking events daily, providing stakeholders with sub-second latency on shipment visibility and automated documentation workflows.
+                    </p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 border border-primary/10 rounded-xl p-8 shadow-sm">
+<h3 class="text-sm font-bold uppercase tracking-wider text-slate-custom mb-6">Project Facts</h3>
+<div class="space-y-6">
+<div>
+<p class="text-xs font-semibold text-primary uppercase">My Role</p>
+<p class="text-base font-medium">Lead Software Engineer</p>
+</div>
+<div>
+<p class="text-xs font-semibold text-primary uppercase">Project Type</p>
+<p class="text-base font-medium">Enterprise SaaS B2B</p>
+</div>
+<div>
+<p class="text-xs font-semibold text-primary uppercase">Platforms</p>
+<p class="text-base font-medium">Web, iOS &amp; Android (API-driven)</p>
+</div>
+<div>
+<p class="text-xs font-semibold text-primary uppercase">Status</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+<p class="text-base font-medium">Live / Operational</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem & Solution -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+<div class="p-8 rounded-xl bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
+<div class="h-12 w-12 bg-red-100 dark:bg-red-900/30 text-red-600 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">report_problem</span>
+</div>
+<h3 class="text-xl font-bold mb-4">The Challenge</h3>
+<p class="text-slate-custom dark:text-slate-400">
+                    Client's existing system relied on manual spreadsheets and legacy EDI formats, leading to a 15% error rate in customs declarations and significant delays in cross-border shipments.
+                </p>
+</div>
+<div class="p-8 rounded-xl bg-primary/5 dark:bg-primary/10 border border-primary/10">
+<div class="h-12 w-12 bg-primary text-white rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-primary">The Solution</h3>
+<p class="text-slate-custom dark:text-slate-400">
+                    Developed a cloud-native platform with automated OCR for document processing and real-time Kafka-based event streaming to monitor shipment health 24/7.
+                </p>
+</div>
+</section>
+<!-- Key Features Grid -->
+<section class="mb-20">
+<h2 class="text-3xl font-bold text-center mb-12">Key Platform Features</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-6 bg-white dark:bg-background-dark border border-primary/5 rounded-xl hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">location_on</span>
+<h4 class="font-bold mb-2">Real-time Tracking</h4>
+<p class="text-sm text-slate-custom">Precision GPS tracking for vehicles and containers globally.</p>
+</div>
+<div class="p-6 bg-white dark:bg-background-dark border border-primary/5 rounded-xl hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">warehouse</span>
+<h4 class="font-bold mb-2">Warehouse Analytics</h4>
+<p class="text-sm text-slate-custom">Automated inventory management with heatmaps.</p>
+</div>
+<div class="p-6 bg-white dark:bg-background-dark border border-primary/5 rounded-xl hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">description</span>
+<h4 class="font-bold mb-2">Customs Automation</h4>
+<p class="text-sm text-slate-custom">Automated tax calculations and filing submissions.</p>
+</div>
+<div class="p-6 bg-white dark:bg-background-dark border border-primary/5 rounded-xl hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">payments</span>
+<h4 class="font-bold mb-2">Financial Engine</h4>
+<p class="text-sm text-slate-custom">End-to-end billing and digital invoicing module.</p>
+</div>
+</div>
+</section>
+<!-- System Architecture -->
+<section class="mb-20 bg-slate-900 rounded-2xl overflow-hidden p-8 lg:p-12 text-center">
+<h2 class="text-3xl font-bold text-white mb-4">System Architecture</h2>
+<p class="text-slate-400 mb-12 max-w-2xl mx-auto">High-level overview of the microservices ecosystem designed for high availability and elastic scalability.</p>
+<div class="aspect-[16/7] bg-slate-800 rounded-xl border border-slate-700 flex items-center justify-center p-8 overflow-hidden">
+<img alt="Architecture Diagram" class="w-full h-full object-contain opacity-70" data-alt="Technical diagram showing cloud infrastructure and microservices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy-1ijfjvc9TETkuabPIfxW29QTKBp0GeLdWNc6D-FeGw7OQMIS6AmR5b-QTX4SPGnnINRrD3DaTE9X1PzhECHwpZypjX23ntycnfbQcm4btYhMcv84yLfMMNAPahyNvcZuutcuYCffTyy8DR9wmZ3-MJLa3I8G-EE735n43ICuG700dPwAEHVoFQeqmXt7llAjsBEMsf25ofhE-V6zQdFhN7wiOr-JMEpc0VdeWb7M1o7yBQU6q5jeCNxDCvnSSwV0nyYe5mItbs"/>
+</div>
+</section>
+<!-- Impact & Results -->
+<section class="mb-20">
+<h2 class="text-3xl font-bold mb-12">Business Impact</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center text-center">
+<p class="text-5xl font-black text-primary mb-2">45%</p>
+<p class="text-lg font-bold">Efficiency Boost</p>
+<p class="text-slate-custom mt-2">Reduction in average shipment processing time.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<p class="text-5xl font-black text-primary mb-2">99.9%</p>
+<p class="text-lg font-bold">Accuracy</p>
+<p class="text-slate-custom mt-2">Compliance rate for international customs filing.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<p class="text-5xl font-black text-primary mb-2">$1.2M</p>
+<p class="text-lg font-bold">Annual Savings</p>
+<p class="text-slate-custom mt-2">Operational cost reduction for enterprise clients.</p>
+</div>
+</div>
+</section>
+<!-- Screenshot Gallery -->
+<section class="mb-20">
+<h2 class="text-3xl font-bold mb-12">Platform Interface</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="aspect-square bg-slate-200 rounded-xl overflow-hidden">
+<img alt="App Screenshot 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Logistics analytics dashboard showing growth charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6sfr6CdJDJ1qh7ZEB3kpmQe-m_GtTn2HbH8S88Czt97lP6Q62PtiNVVz_XxQRXFrLI_A6GSNBJp6xULL5_pUrzEOKdfYgHVCwQOSRLAmVvzHsya0cBIaM_iJ8GaxwSLsbVfnzDmZx9YlCyEJL9HuoTnwjBCmPXrTystQ4wCs6THmnBCXHfALho1NTnMBrMBYrypbcM6eqjTXyJGxWE5PHT-YqRSY_95ybpvHXU_jqF0CBLnu9nF2dhk6WeUjbiWwrpLmzyYQObT0"/>
+</div>
+<div class="aspect-square bg-slate-200 rounded-xl overflow-hidden">
+<img alt="App Screenshot 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Mobile view of the logistics tracking application" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvhyDqO1bXlv9EFVMTjEKCRRky6HirQ084OzL0UMdQzsWfi6b1Y7xWVG_p9fV2zd4-RKvouCfYuF7iZyovvisU25he_uypf2gLUXI-QjcY0UIlT7rbPbTQ-xrPjk4Ns-DfT0mxoVHfXPbcg0bRIGX4rEzthTTK83B8aFPaOJeckoYXJvnZnSn4rZ8rb05npahgLwAUaZTvFyoZGCTSYpGjh6FrhfuoHfMpViHCdQzfzd9zb-aq3LuYgQZTs8SqbFS8DTHiYgRJLso"/>
+</div>
+<div class="aspect-square bg-slate-200 rounded-xl overflow-hidden">
+<img alt="App Screenshot 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Spreadsheet style data management interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq_nn4B_ByBIiBsa5EVzp602M7L6bQN7ev1R7hgZ7t_BW8sYcl5jqMF_h3VkBqMRsfRy466Dt6uEZ8oAnw9c1NjuCbd4RrVFCEEdXCUOHUk8dn4-srmZ44HKhZIkVcNkCr1Ey9IdLV5cyyRlQlioC0RAP3_BkpqmNyAXDQCeg9TaYT3Wfis_o4OtlIJZtsv5YLaBolomQAY5idJG76Fw45yxVyRTLFIIejA2ReyDs_mJoa8TCuqOtpxotg4_rYgwLHzzLOq-le5No"/>
+</div>
+</div>
+</section>
+<!-- Tech Stack -->
+<section class="mb-20 text-center">
+<h2 class="text-2xl font-bold mb-8">Technologies Used</h2>
+<div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10 text-primary font-medium">Python / Django</div>
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10 text-primary font-medium">React.js</div>
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10 text-primary font-medium">Redux Toolkit</div>
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10 text-primary font-medium">MySQL</div>
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10 text-primary font-medium">Redis</div>
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10 text-primary font-medium">Docker &amp; K8s</div>
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10 text-primary font-medium">AWS (EC2, S3, RDS)</div>
+<div class="px-4 py-2 bg-primary/5 rounded-lg border border-primary/10 text-primary font-medium">Apache Kafka</div>
+</div>
+</section>
+<!-- Footer Call to Action -->
+<section class="border-t border-primary/10 pt-12 text-center pb-20">
+<h3 class="text-2xl font-bold mb-6">Interested in working together?</h3>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="h-12 px-10 rounded-lg bg-primary text-white font-bold hover:shadow-lg transition-all">
+                    Start a Project
+                </button>
+<button class="h-12 px-10 rounded-lg border-2 border-primary text-primary font-bold hover:bg-primary/5 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">arrow_back</span> Back to Projects
+                </button>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-background-dark py-12 border-t border-primary/5">
+<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-custom text-sm">© 2024 Portfolio. Designed with precision for logistics engineering.</p>
+<div class="flex gap-6">
+<a class="text-slate-custom hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-slate-custom hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="text-slate-custom hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Professionelles Portfolio | Full-Stack Softwareentwicklerin</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet"/>
+
+<style type="text/tailwindcss">
+:root {
+  --primary: #1F3A5F;
+  --accent: #2E6F95;
+  --background: #F5F7FA;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: #334155;
+}
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;
+}
+.nav-link {
+  @apply text-slate-600 hover:text-[var(--primary)] font-medium transition-colors duration-200;
+}
+.section-padding {
+  @apply py-16 md:py-24;
+}
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.05),0 2px 4px -1px rgba(0,0,0,.03);
+}
+</style>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary:"#1F3A5F",
+        accent:"#2E6F95",
+        background:"#F5F7FA"
+      }
+    }
+  }
+};
+</script>
+</head>
+
+<body class="antialiased">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white font-bold text-lg shadow-lg">DPK</div>
+<div class="flex flex-col">
+<span class="text-lg font-bold text-primary leading-none uppercase tracking-tight">Damayanth</span>
+<span class="text-xs text-accent font-semibold tracking-widest uppercase">Softwareentwicklung</span>
+</div>
+</div>
+
+<div class="hidden lg:flex items-center space-x-10">
+<div class="flex space-x-8">
+<a class="nav-link" href="#skills">Kompetenzen</a>
+<a class="nav-link" href="#experience">Erfahrung</a>
+<a class="nav-link" href="#projects">Projekte</a>
+<a class="nav-link" href="#contact">Kontakt</a>
+</div>
+
+<div class="h-6 w-px bg-slate-200"></div>
+
+<div class="flex items-center gap-0.5 text-sm font-bold bg-slate-100 p-1 rounded-md">
+<a href="index.html" class="px-3 py-1.5 rounded text-slate-400 hover:text-primary">EN</a>
+<span class="px-3 py-1.5 rounded bg-white text-primary shadow-sm">DE</span>
+</div>
+</div>
+
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<header class="bg-white border-b border-slate-100 overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28">
+
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+<div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 relative">
+<div class="absolute inset-0 rounded-full border-4 border-slate-50 ring-8 ring-slate-100/50"></div>
+<img src="images/profile.jpeg" class="w-full h-full object-cover rounded-full shadow-2xl relative z-10"/>
+</div>
+
+<div class="flex-1 text-center lg:text-left">
+
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-accent text-sm font-bold uppercase tracking-wider mb-6">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+Softwareentwicklerin · Offen für internationale Positionen
+</div>
+
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary mb-6 leading-tight">
+Full-Stack Business <br class="hidden md:block"/> Systems Developer
+</h1>
+
+<p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+Enterprise-Architektur und Modernisierung skalierbarer Unternehmenssysteme
+über Web-, Mobile-, Desktop- und Datenplattformen hinweg.
+</p>
+
+</div>
+</div>
+</div>
+</header>
+
+<!-- SKILLS -->
+<section class="section-padding bg-background" id="skills">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Kerntechnologien</h2>
+<div class="h-1.5 w-16 bg-accent mx-auto rounded-full"></div>
+</div>
+
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+
+<!-- SAME ICON CARDS -->
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center border border-slate-100 card-shadow">
+<img class="w-14 h-14 mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrMESQMneI-YGNqKXT4titZTbRkDdAS7HmML0Kd0obEOi4I-R7QGZPkbkYcvbEUB7ukMv8I9G6Y2NNK3yJuQrrrL7yXhftSmh09GXoKNyOdUIHM76N_sSBxliI9QfICgQHkJWXiFbfnRLmDmNxEgVd1kMFk5Hy_GOw4m2f_3Gks9V5SBUc67d96_xcQVx2h7_o5LKvb_kz-4YNv3NmICaMSTu30OcoQjyVfzv4d2u_bTJDHAQcWtRdm0xxWH2EdDu4Df0ME6KzqV4"/>
+<span class="font-bold">Django</span>
+</div>
+
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center border border-slate-100 card-shadow">
+<img class="w-14 h-14 mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj4pKKHgtJYiU3B_9Cw0RQl-LA5j1KmeeLIIhWR6bRHHFOLj59gF8RVcMkrZWvpiJdNnczvPJBciAKe2EptOxHAN-AfqO1_rcI2E9d4pdRQgdEsiS7XKh3uZIJchRWJpnotC_KLnLr2zQjkMTGft0ND2fKJYvUPG_tw_hjYMC_sUo_jJ-EvUO0v_rS6xN9i-jpjh5xYZVAfc2zRy4IUJq9otsztDdvyba_4o5RdNnMbAh4YpXhwvEyJc3O8wW2oW3nSDylWl2q0Fo"/>
+<span class="font-bold">PHP</span>
+</div>
+
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center border border-slate-100 card-shadow">
+<img class="w-14 h-14 mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk0VMPjg5cmccNTGqdKKZ0ucQGOywR43vcMqVYJ0ebeygA5AHKCMdgkn4GLSIZsB7uKOteaMEEFJNOD1375p9fqx50QT9w5i1mV2ImiiAlMArkIiM5DrAOy-ti2cVu8E_tClVkpA69FmRIKh671wpvYn_UQv0x5HHEjWA_P4JY2zFvwRcCoqIrQRIXuM_ntPCFJMEEnk9mS-sYCABTX26sF2PxSpuEwuLd8pUA1FfRLv5GCruZl_NMyf4RVrRrpOzdI5ffs0XsHZs"/>
+<span class="font-bold">VB.NET</span>
+</div>
+
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center border border-slate-100 card-shadow">
+<img class="w-14 h-14 mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAoHxxIeDAJ8MO-N5UltydmouZ3_wEJ7qFWzac1ZfjoteG1MU9ttZP7ovMs0FCX-tREnZ4Ecdj_0mYpjR76BzBINnIboSjxP9FQ1AWQ8ctuBazv15wZnx60rO3CD0_uhMM7d5sHMnvkBeN7cbESz39trDU8jfeRS6qR0_Bl-x5l4v0TyQYN7_NJP0tQQs2-MfhM2WBvWLADpfpbgeSy0K9DGpyn8wl7t5WwfmLjsWVaaFLQtgRfQ8GrFen_V0BLN78s2vimwPOqiY"/>
+<span class="font-bold">MySQL</span>
+</div>
+
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center border border-slate-100 card-shadow">
+<img class="w-14 h-14 mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGv-a4XnidJ9-gKY1MnnBY_lWQ9a_A4AaqrpHky4SmP0a_JewhJ9mHGvnJFY86_asdqmlP6uelet5tZ70S7oCsRZI8fM5bDh7H460H26o2LvMpDZbIfmNu3JRZj6N62Pt2Emo2vWzuQUImRdAG6X0qFNSfgGCbux4GDNAfDXj_iFrCqh2vcysJ8Rq4cyVZVpsG654ZlM5iMgU4SWJk6Gh6QtfJeHdWiqAHBYxK5Ppv065xusoZx6mSnriafBNhaM3NhZOWo1epuqM"/>
+<span class="font-bold">PostgreSQL</span>
+</div>
+
+<div class="bg-white p-8 rounded-2xl flex flex-col items-center border border-slate-100 card-shadow">
+<img class="w-14 h-14 mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtTz5cIQtYyGrYHJ2_5dy7QncB7CyVFTQ6q9-xXdayA-JcfF6AK1cIGqY2Uf4B7-6xIWs9L6krC6u_-gHxkmPWN1LyJNBzfK-1dBxDHvHhXkmTTRp7YwQL93GVu_uWjCGOslk8GQGRmBDSzGQQ5DNnY8InRpgcSY-XuU0MtC4YepyD1BPIZoAhnRtoiCNKvaa9dRAuzaoed-6oAkgSgaANZ1HeykWbbq3FhEkBgMsEEGoTA5bLB21eE4hAkCLvvXZjKlk9DZIA_PE"/>
+<span class="font-bold">JavaScript</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section-padding bg-white" id="experience">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Berufserfahrung</h2>
+<div class="h-1.5 w-16 bg-accent mx-auto rounded-full"></div>
+</div>
+
+<p class="text-slate-600 text-center">
+Detaillierte Berufserfahrung identisch mit englischer Version.
+</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-primary text-white pt-20 pb-10" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="grid lg:grid-cols-2 gap-16 mb-20">
+
+<div>
+<h2 class="text-4xl font-extrabold mb-6">
+Verfügbar für internationale Softwareentwicklungs-Positionen
+</h2>
+
+<p class="text-blue-100/70 text-lg mb-10 max-w-md">
+Full-Stack Business-Systems-Ingenieurin mit über 15 Jahren Erfahrung
+in Unternehmenssoftware für Logistik, Finanzen und operative Plattformen.
+Standort Sri Lanka · offen für europaweite Relocation.
+</p>
+
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span class="text-lg">damvict@gmail.com</span>
+</div>
+
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<span class="text-lg">Sri Lanka · internationale Mobilität</span>
+</div>
+</div>
+</div>
+
+<div class="bg-white/5 p-10 rounded-3xl border border-white/10">
+<h3 class="text-2xl font-bold mb-6">Profil</h3>
+
+<p class="text-blue-100/80 mb-6">
+Spezialisiert auf Entwicklung von Unternehmenssystemen für Logistik,
+Finanzen, Inventar-, Asset- und Workflow-Management.
+</p>
+
+<p class="text-blue-100/80 mb-8">
+Breite Multi-Stack-Erfahrung mit Django, PHP/MySQL,
+VB.NET/SQL Server und React Native über Web-, Desktop-
+und Mobile-Architekturen.
+</p>
+
+<a href="Damayanthi_Kumari_CV.pdf"
+class="bg-accent text-white px-6 py-3 rounded-xl font-bold">
+Lebenslauf herunterladen
+</a>
+
+</div>
+</div>
+
+<div class="pt-10 border-t border-white/10 text-sm text-blue-100/50 text-center">
+© 2026 Damayanthi Pushpa Kumari
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

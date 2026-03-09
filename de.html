@@ -53,10 +53,13 @@ tailwind.config = {
 <body class="antialiased">
 
 <!-- NAV -->
+<!-- NAV -->
 <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
 <div class="flex justify-between h-20 items-center">
 
+<!-- LOGO -->
 <div class="flex items-center gap-3">
 <div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white font-bold text-lg shadow-lg">DPK</div>
 <div class="flex flex-col">
@@ -65,23 +68,48 @@ tailwind.config = {
 </div>
 </div>
 
-<div class="hidden lg:flex items-center space-x-10">
-<div class="flex space-x-8">
+<!-- RIGHT SIDE -->
+<div class="flex items-center gap-4">
+
+<!-- Desktop Menu -->
+<div class="hidden lg:flex items-center space-x-8">
 <a class="nav-link" href="#skills">Kompetenzen</a>
 <a class="nav-link" href="#experience">Erfahrung</a>
 <a class="nav-link" href="#projects">Projekte</a>
 <a class="nav-link" href="#contact">Kontakt</a>
 </div>
 
-<div class="h-6 w-px bg-slate-200"></div>
+<div class="hidden lg:block h-6 w-px bg-slate-200"></div>
 
+<!-- Language Switch -->
 <div class="flex items-center gap-0.5 text-sm font-bold bg-slate-100 p-1 rounded-md">
 <a href="index.html" class="px-3 py-1.5 rounded text-slate-400 hover:text-primary">EN</a>
 <span class="px-3 py-1.5 rounded bg-white text-primary shadow-sm">DE</span>
 </div>
+
+<!-- Burger -->
+<div class="lg:hidden">
+<button id="menuBtn" class="p-2 text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
 </div>
 
 </div>
+
+</div>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden lg:hidden pb-6">
+<div class="flex flex-col gap-4 px-4 pt-4">
+
+<a class="nav-link" href="#skills">Kompetenzen</a>
+<a class="nav-link" href="#experience">Erfahrung</a>
+<a class="nav-link" href="#projects">Projekte</a>
+<a class="nav-link" href="#contact">Kontakt</a>
+
+</div>
+</div>
+
 </div>
 </nav>
 
@@ -239,6 +267,13 @@ Lebenslauf herunterladen
 
 </div>
 </footer>
+<script>
+const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("mobileMenu");
 
+btn.addEventListener("click", function () {
+menu.classList.toggle("hidden");
+});
+</script>
 </body>
 </html>
